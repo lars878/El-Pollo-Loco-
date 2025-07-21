@@ -1,9 +1,71 @@
+@font-face {
+    font-family: 'Xisfani';
+    src: url('fonts/Xisfani.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: 'Mayan';
+    src: url('fonts/Mayan.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: 'Monof55';
+    src: url('fonts/monof55.ttf') format('TrueType');
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.br-16 {
+    border-radius: 16px;
+
+}
+
+h1 {
+    font-family: 'Xisfani';
+    font-weight: bolder;
+    color: #FF9800;
+    text-shadow: 2px 2px #000000;
+}
+
+#canvasMask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 720px;
+}
+
 body {
+    font-stretch: normal;
+    font-family: 'Xisfani';
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('./img/Background/desert_with_chicken_and_mexican.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 canvas {
-    background-color: black;
+    display: block;
+    background-color: #000000c2;
+    -webkit-box-shadow: 0 0 20px 10px #000000c2;
+    -moz-box-shadow: 0 0 20px 10px #000000c2;
+    box-shadow: 0 0 20px 10px #000000c2;
 }
