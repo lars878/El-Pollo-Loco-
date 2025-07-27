@@ -19,6 +19,7 @@ class World {
     canvas;
     ctx;
     keyboard;
+    camera_x = 0; // Initial camera position
 
     constructor(canvas, keyboard) {
         this.canvas = canvas;
@@ -35,10 +36,14 @@ class World {
     draw() {
         this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
 
+        this.ctx.translate(this.camera_x, 0); // Move the camera
+
         this.addObjectsToMap(this.backgroundObjects);
         this.addToMap(this.character);
         this.addObjectsToMap(this.enemies);
         this.addObjectsToMap(this.clouds);
+
+        this.ctx.translate(-this.camera_x, 0); // Reset camera position for next draw
 
 
         requestAnimationFrame(() => this.draw());

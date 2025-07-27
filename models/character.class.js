@@ -35,6 +35,9 @@ class Character extends MovableObject {
                 this.x -= this.speed; // Move character to the left
                 this.otherDirection = true; // Change direction for animation
             }
+
+            this.world.camera_x = -this.x; // Update camera position based on character's x position
+
         }, 1000 / 60); // 60 FPS
 
 
