@@ -1,1 +1,2 @@
 Du kreierst ein Jump-and-Run-Spiel, das nicht nur Kinderherzen glücklich machen wird. Hier bist du der Superheld hinter der Action und steuerst die Spiellogik. Dabei wendest du fortgeschrittene Konzepte wie Objektorientierung an. Immer wieder hören wir, dass dieses Projekt mächtig Eindruck bei Bewerbungsgesprächen unserer Teilnehmer macht.
+.
